@@ -5,7 +5,7 @@ import QuoteItem from "./QuoteItem";
 function QuotesList({ quotes }) {
 
   const htmlFriends = quotes.map((quote, idx)  => (
-    <li key={idx} className="quote_card">
+    <li key={idx} className="quote__card">
       <QuoteItem
         quote={quote.quote}
         character={quote.character}
@@ -14,7 +14,7 @@ function QuotesList({ quotes }) {
   ));
 
   return (
-    <ul className="quote_list">
+    <ul className="quote__list">
       {htmlFriends}
     </ul>
   );
